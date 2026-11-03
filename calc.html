@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        calculator
+    </title>
+    <link rel="stylesheet" href="./calc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+
+    <div class="calc">
+    
+    <div class="display">
+        <input type="text" id="input">
+        <input type="text" id="result">
+    </div>
+    <div class="advBtn">
+        <input type="button" value="Ac" onclick="allclear()">
+        <input type="button" value="history">
+        <input type="button" value="BS" onclick="backspace()">
+
+    </div>
+    <div class="btns" id="calc">
+        <input type="button" value="1" class="btn btn-num">
+        <input type="button" value="2" class="btn btn-num">
+        <input type="button" value="3" class="btn btn-num">
+        <input type="button" value="/" class="btn btn-op">
+ 
+        <input type="button" value="4" class="btn btn-num">
+        <input type="button" value="5" class="btn btn-num">
+        <input type="button" value="6" class="btn btn-num">
+        <input type="button" value="*" class="btn btn-op">
+
+        <input type="button" value="7" class="btn btn-num">
+        <input type="button" value="8" class="btn btn-num">
+        <input type="button" value="9" class="btn btn-num">
+        <input type="button" value="-" class="btn btn-op">
+
+        <input type="button" value="." class="btn btn-num">
+        <input type="button" value="0" class="btn btn-num">
+        <input type="button" value="=" class="btn btn-equal" onclick="equal()">
+        <input type="button" value="+" class="btn btn-op">
+
+
+
+
+    </div>
+    </div>
+
+
+    <div id="history">
+        <h1 id="empty"> No history yet 
+   </h1>
+   
+    </div>
+</body>
+<script src="./calc.js"></script>
+</html>
